@@ -1,0 +1,7 @@
+A new way of writing useState hook is like this:
+📍const arr = useState(list)
+- In this case, list is an array. When we console arr, it returns a variable and a function. So, we can destructure that variable and function like this:
+📍const resList = arr[0]
+📍const setResList = arr[1]
+And it will work exactly like this:
+📍const [resList, setResList] = useState(list)
